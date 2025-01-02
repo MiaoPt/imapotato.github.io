@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Love Story</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        
+       
+        <style>
+            div ol>ul {
+                border: 3px dashed blue;
+                font-family: Calibri, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            a[href='fried rice.jpeg'] {
+                color: green;
+            }
+
+            button {
+                font-size: 20px;
+                font-family: Calibri;
+                font-weight: Bold;
+                background-color: aqua;
+            }
+            button:hover{
+                font-size: 30px;
+                background-color: blue;
+            }
+            @media (min-width: 600px) {
+                body{background-color:pink;
+            }
+            }
+            @media (max-width: 599px) {
+                body{background-color:lightcoral;
+            }
+            }
+
+            #container{
+                display:flex;
+                flex-wrap:wrap;
+
+            }
+            #container > div{
+                background-color: springgreen;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+            }
+            #grid{
+                background-color: green;
+                display:grid;
+                padding:20px;
+                grid-column-gap: 20px;
+                grid-row-gap:10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .grid-item{
+                background-color: whitesmoke;
+                padding:20px;
+                font-family: Kaiti, Arial;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="welcome">Welcome to our Love Story!</h1>
+
+        <form>
+            <input type="text" placeholder="Your Name" name="name">
+            <input type="password" placeholder="Your password" password="password">
+            <input type='submit'>
+        </form>
+
+        <div>
+            What is Iain's favourite colour?
+            <input name='colour' type="radio" value="red"> Red
+            <input name='colour' type="radio" value="blue"> Blue
+            <input name='colour' type="radio" value="green"> Green
+        </div>
+
+        <div>
+            Where does Iain come from?
+            <input name='country' list="countries" placeholder="country">
+            <datalist id="countries">
+                <option value="China">
+                <option value="UK">
+            </dataalist>
+        </div>
+        <button>Click to sumbit your answer</button>
+
+        <h1>Timeline</h1>
+        I met Iain when I was 25.
+
+        <h2 class="foo">Location</h2>
+        Street of Beijing
+
+        <h3 class="foo">Job</h3>
+        Waitor and waitress
+
+        <h4>First Impression</h4>
+        He is COLD!
+
+        <h5>Second Impression</h5>
+        He is nice!
+
+        <h6>Food we ate</h6>
+        Tudousi and some strange meat balls.
+
+        <div>
+        What did we do?
+        <ol>
+            <li>work</li>
+            <li>eat</li>
+            <ul>
+                <li>lunch</li>
+                <li>dinner</li>
+            </ul>
+            <li>work</li>
+            <li>he cooked</li>
+            <li>went home</li>
+        </ol>
+        </div>
+        Nicknames we call each other
+        <table>
+            <style>
+                table {
+                    border: 3px solid red;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    border: 3px solid red;
+                    padding: 5px;
+                }
+            </style>
+            <thead>
+                <tr>
+                    <th>Iain</th>
+                    <th>Miao</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>potato</td>
+                    <td>s. potato</td>
+                </tr>
+                <tr>
+                    <td>weetman</td>
+                    <td>master of nested for loops</td>
+                </tr>
+            </tbody>
+        </table>
+        Some random things:
+        <ul>
+            <li>We met in Sichuan house for a meal</li>
+            <li>We walked to Chrismas market</li>
+        </ul>
+
+        <img src="cooking.jpeg" alt="cooking" width = 300>
+
+        <a href='https://www.google.com' target="_blank" >Click for a useless link</a>
+        <a href='fried rice.jpeg' target="_blank" >Click for delicious fried rice</a>
+    
+    <div id="container">
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+        <div>1. This is a demo text it needs to be very very long</div>
+    </div>
+      
+    <div id="grid">
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+        <div class="grid-item">1. This is another demo text it needs to be very very long</div>
+    </div>
+
+    </body>
+</html>
